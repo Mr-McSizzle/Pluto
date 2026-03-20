@@ -1,73 +1,86 @@
-# React + TypeScript + Vite
+# 🪐 Pluto - Intelligent CBDC-Powered Financial OS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pluto is a next-generation financial operating system designed for the future of digital currency. Built on the **e-Rupee (CBDC)** stack, it combines the security of central bank money with the intelligence of programmable smart contracts and universal UPI interoperability.
 
-Currently, two official plugins are available:
+![Pluto Banner](https://lh3.googleusercontent.com/aida-public/AB6AXuAnfX89_v8Zun58X0i-U5s6Pvh-1IuzrV-Zt-U1Vv-U9k-S-X-S-X-S-X-S-X-S-X-S-X)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+### 💎 ForgeScore™ (Financial Identity)
+A cryptographic, behavior-based financial reputation score that unlocks access to uncollateralized credit and personalized yields without traditional banking histories.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛡️ Smart-Contract Exceptions & Grievances
+- **Emergency Savings Unlock**: Intelligently detect financial crises or employer disputes to instantly unlock locked emergency funds via pre-approved smart-contract exceptions.
+- **P2P Dispute Resolution**: A streamlined interface for filing grievances on high-value CBDC transfers.
 
-## Expanding the ESLint configuration
+### 🔌 Universal UPI Interoperability
+Bridge the gap between CBDC and standard payment networks. Pluto natively translates e-Rupee transactions to any of India's 50M+ standard UPI QR codes.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📶 Offline Tap-to-Pay (3D Vaults)
+Execute micro-transactions in dead zones using secure, pre-authorized 3D vaults that sync back to the ledger once connectivity is restored.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🤖 AI Wealth Manager
+An autonomous financial guardian that redirects small fractions of every income stream into automated "Forge" strategies based on real-time velocity analysis.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Technical Stack
+
+- **Frontend**: [React 19](https://react.dev/) + [Vite 8](https://vite.dev/) (Vite-based SPA)
+- **Styling**: Vanilla CSS + [Lucide Icons](https://lucide.dev/)
+- **Backend/DB**: [Supabase](https://supabase.com/) (PostgreSQL + Auth)
+- **Routing**: React Router 7
+- **PWA**: `vite-plugin-pwa` for 100% offline & installable capability
+
+---
+
+## 🏁 Getting Started
+
+### 1. Prerequisites
+- Node.js (v18+)
+- npm
+
+### 2. Environment Setup
+Create a `.env.local` in the project root:
+```bash
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 3. Installation
+```bash
+npm install
 ```
+
+### 4. Development
+```bash
+npm run dev
+```
+
+### 5. Production Build
+```bash
+npm run build
+```
+
+---
+
+## 🌍 Deployment
+
+Pluto is optimized for zero-downtime deployment on **Vercel** or **Netlify**.
+
+1. Connect your GitHub repository.
+2. Add your `VITE_SUPABASE_*` environment variables.
+3. Use the following build settings:
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+   - **Environment**: See `.env.local`
+
+---
+
+## ⚖️ License
+Internal use for the Pluto Project. All rights reserved.
+
+---
+
+> [!TIP]
+> **Pro Tip**: Use the central **"+" Action Sheet** to quickly access the most common tools like Payouts, Pools, and the Forge Rules engine.
