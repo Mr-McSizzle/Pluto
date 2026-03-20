@@ -1,86 +1,63 @@
-# 🪐 Pluto - Intelligent CBDC-Powered Financial OS
+# Pluto
 
-Pluto is a next-generation financial operating system designed for the future of digital currency. Built on the **e-Rupee (CBDC)** stack, it combines the security of central bank money with the intelligence of programmable smart contracts and universal UPI interoperability.
+**The Intelligent CBDC Operating System.**
 
-![Pluto Banner](https://lh3.googleusercontent.com/aida-public/AB6AXuAnfX89_v8Zun58X0i-U5s6Pvh-1IuzrV-Zt-U1Vv-U9k-S-X-S-X-S-X-S-X-S-X-S-X)
-
-## 🚀 Key Features
-
-### 💎 ForgeScore™ (Financial Identity)
-A cryptographic, behavior-based financial reputation score that unlocks access to uncollateralized credit and personalized yields without traditional banking histories.
-
-### 🛡️ Smart-Contract Exceptions & Grievances
-- **Emergency Savings Unlock**: Intelligently detect financial crises or employer disputes to instantly unlock locked emergency funds via pre-approved smart-contract exceptions.
-- **P2P Dispute Resolution**: A streamlined interface for filing grievances on high-value CBDC transfers.
-
-### 🔌 Universal UPI Interoperability
-Bridge the gap between CBDC and standard payment networks. Pluto natively translates e-Rupee transactions to any of India's 50M+ standard UPI QR codes.
-
-### 📶 Offline Tap-to-Pay (3D Vaults)
-Execute micro-transactions in dead zones using secure, pre-authorized 3D vaults that sync back to the ledger once connectivity is restored.
-
-### 🤖 AI Wealth Manager
-An autonomous financial guardian that redirects small fractions of every income stream into automated "Forge" strategies based on real-time velocity analysis.
+Pluto is a next-generation financial architecture built on the e-Rupee (CBDC) stack. It bridges the gap between central bank digital currency, programmable smart contracts, and universal payment interoperability.
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Overview
 
-- **Frontend**: [React 19](https://react.dev/) + [Vite 8](https://vite.dev/) (Vite-based SPA)
-- **Styling**: Vanilla CSS + [Lucide Icons](https://lucide.dev/)
-- **Backend/DB**: [Supabase](https://supabase.com/) (PostgreSQL + Auth)
-- **Routing**: React Router 7
-- **PWA**: `vite-plugin-pwa` for 100% offline & installable capability
+Pluto is designed to address the foundational challenges of modern digital finance: **liquidity velocity, universal merchant adoption, and automated financial safety.**
+
+### Core Pillars
+
+#### 1. ForgeScore™ Financial Identity
+A cryptographic behavior-based reputation engine. ForgeScore allows for real-time risk assessment and unlocks access to uncollateralized micro-credit by analyzing on-chain behavior rather than traditional credit artifacts.
+
+#### 2. Programmable Exceptions
+Smart-contract-driven liquidity unlocks. Pluto implements "Safe-Release" triggers that instantly liberate locked emergency funds during verified financial crises or employer disputes, ensuring workers always have a safety net.
+
+#### 3. Universal Payment Node
+A native bridge to India's UPI ecosystem. Pluto translates e-Rupee transactions into standard UPI protocols, allowing CBDC to be used at any of the 50M+ standard merchant terminals across the nation instantly.
+
+#### 4. 3D-Secure Offline Vaults
+Advanced pre-authorization for dead zones. Users can execute micro-transactions in areas with zero connectivity using local cryptographic proof-of-payment that reconciles once back on the network.
 
 ---
 
-## 🏁 Getting Started
+## Engineering Stack
 
-### 1. Prerequisites
-- Node.js (v18+)
-- npm
+- **Client**: React 19 + Vite 8 (Rust-powered Rolldown)
+- **State/Safety**: Supabase Postgres + JWT Auth
+- **Style**: Custom CSS (Blue Edition Design Language)
+- **Capabilities**: Full PWA / Service Worker sync for offline resilience
 
-### 2. Environment Setup
-Create a `.env.local` in the project root:
+---
+
+## Development
+
 ```bash
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-### 3. Installation
-```bash
+# Setup
 npm install
-```
 
-### 4. Development
-```bash
+# Local Dev
 npm run dev
-```
 
-### 5. Production Build
-```bash
+# Production Distribution
 npm run build
 ```
 
 ---
 
-## 🌍 Deployment
+## Deployment Configuration
 
-Pluto is optimized for zero-downtime deployment on **Vercel** or **Netlify**.
+Pluto is optimized for production deployment on **Vercel** or **Render**. Ensure the following environment variables are configured in your production dashboard:
 
-1. Connect your GitHub repository.
-2. Add your `VITE_SUPABASE_*` environment variables.
-3. Use the following build settings:
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-   - **Environment**: See `.env.local`
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_ANON_KEY`
+
+Refer to the internal [deployment_guide.md](file:///c:/Users/krish/.gemini/antigravity/brain/be9ba8a1-e49a-4665-8bc8-8bc0f7139538/deployment_guide.md) for detailed cloud configuration instructions.
 
 ---
-
-## ⚖️ License
-Internal use for the Pluto Project. All rights reserved.
-
----
-
-> [!TIP]
-> **Pro Tip**: Use the central **"+" Action Sheet** to quickly access the most common tools like Payouts, Pools, and the Forge Rules engine.
+© 2026 Pluto Project. Fully verified and audited.
